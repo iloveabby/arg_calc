@@ -1,3 +1,8 @@
+/*Argument Calculator By Samuel Johnson 
+under the GPL 0x3+
+
+
+					*/
 #include <stdio.h>
 #include <stdlib.h>
 #define add 0
