@@ -1,8 +1,3 @@
-/*Argument Calculator By Samuel Johnson 
-under the GPL 0x3+
-
-
-					*/
 #include <stdio.h>
 #include <stdlib.h>
 #define add 0
@@ -30,6 +25,10 @@ double *get_nums(int argc,char **argv){
 }
 
 int main(int argc,char **argv){
+	if(argc < 3){
+		puts("error!, You lack arguments");
+		return 0;
+	}
 	double output = 0;
 	double *argnumbs;
 	char op = 0;
