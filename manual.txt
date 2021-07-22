@@ -1,0 +1,10 @@
+USE:
+    calc operator numbers
+    ex:" $: calc + 1 2"
+    the program would print out 3.0000
+OPERATORS:
+    + = add
+    - = subtract
+    x = multiply
+    / = divide
+    
