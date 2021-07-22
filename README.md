@@ -10,4 +10,4 @@ operators
   - = subtract
   x = multiply
   / = divide 
-Under GPL 0x3+
+
