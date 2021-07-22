@@ -10,6 +10,10 @@ char get_op(char **argv){
 	else if (argv[1][0] == '-') return sub;
 	else if (argv[1][0] == 'x') return mut;
 	else if (argv[1][0] == '/') return div;
+	else{
+		puts("Invaild operator");
+		exit(1);
+	}
 }	
 double *get_nums(int argc,char **argv){
 	double *ptr =  calloc(argc - 1,sizeof(double));
@@ -52,7 +56,7 @@ int main(int argc,char **argv){
 	else if(op == mut){
 		output = argnumbs[count];
 		count++;
-		while(count != term){
+		while(count < argc - 2){
 			output = output * argnumbs[count];
 			count++;
 		}
